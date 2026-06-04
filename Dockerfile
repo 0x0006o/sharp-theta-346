@@ -16,8 +16,7 @@ RUN mkdir -p temp
 
 ENV TZ=Asia/Kolkata
 
-RUN npm install -g yarn
-
+# Yarn est déjà présent
 RUN yarn install
 
 CMD ["node", "index.js"]
